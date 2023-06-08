@@ -22,8 +22,44 @@ function getPlayerSelection () {
 
 // the function that plays 1 round of Rock-Paper-Scissors after taking 2 parameters, the playerSelection and computerSelection
 function playRound (playerSelection, computerSelection) {
+    
+// announcing the fighters    
+    console.log("Computer Choice: " + computerSelection);
+    console.log("Player Selection: " + playerSelection);
+// empty line for visibility
+    console.log("");
 
-    console.log("You Lose! Paper beats Rock");
+    if (playerSelection === "rock") {
+        if (computerSelection === "scissors") {
+            console.log("Rock beats Scissors");
+            console.log("Player Won, Congratulations!");
+        } else if (computerSelection === "paper") {
+            console.log("Player LOST, Paper beats Rock!");
+        } else {            // computerSelection === "rock"
+            console.log("Rock VS Rock");
+            console.log("It's a TIE!!!");
+        }
+    } else if (playerSelection === "paper") {
+        if (computerSelection === "rock") {
+            console.log("Paper beats Rock");
+            console.log("Player Won, Congratulations!");
+        } else if (computerSelection === "scissors") {
+            console.log("Player LOST, Scissors beat Paper!");
+        } else {            // computerSelection === "paper"
+            console.log("Paper VS Paper");
+            console.log("It's a TIE!!!");
+        }
+    } else {                // playerSelection === "scissors"
+        if (computerSelection === "paper") {
+            console.log("Scissors beat Paper");
+            console.log("Player Won, Congratulations!");
+        } else if (computerSelection === "rock") {
+            console.log("Player LOST, Rock beats Scissors!");
+        } else {            // computerSelection === "paper"
+            console.log("Scissors VS Scissors");
+            console.log("It's a TIE!!!");
+        }
+    }
 }
 
-console.log("Computer Choice: " + getComputerChoice());
+playRound(getPlayerSelection(), getComputerChoice());
