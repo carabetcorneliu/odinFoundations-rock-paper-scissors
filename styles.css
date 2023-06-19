@@ -1,0 +1,12 @@
+.playerOptionsContainer {
+    display: flex;;
+    justify-content: center;
+}
+
+.optionsContainer,
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}

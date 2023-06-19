@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Odin Foundations/ Rock-Paper-Scissors Game</title>
 </head>
 
 
 <body>
-    
+    <div><center>Game up to 5 wins, pick your warrrior</center></div>
+    <br>
+    <div class="playerOptionsContainer">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+<br>
+<hr>
+<!-- <div class="optionsContainer">
+    <div class="computerChoiceContainer">Computer Choice: </div>
+    <div class="playerSelectionContainer">Player Selection: </div> 
+</div> -->
+    <div class="resultContainer">
+        <div>You have played : <span id="scoreContainer">0</span> games</div>
+        <div>Last game result is :</div>
+        <div id="resultRowOne"></div>
+<!--        <div id="resultRowTwo"></div>  -->
+        <hr>
+        <div>Total score is : </div>
+        <div id="resultRowThree"></div> 
+        <div id="resultRowFour"></div>
+    </div>
+<hr>
+
 </body>
+
 </html>
